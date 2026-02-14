@@ -56,7 +56,7 @@ int main() {
     ssize_t bytesRead;
     while ((bytesRead = recv(clientSocket, buffer, sizeof(buffer), 0)) > 0) {
         // Process received data, e.g., print it
-        printf("Received: %.*s", (int)bytesRead, buffer);
+        printf("Received: %.*s\n", (int)bytesRead, buffer);
     }
 
     // Close sockets
